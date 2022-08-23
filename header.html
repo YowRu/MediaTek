@@ -1,0 +1,79 @@
+<div class="WP">
+    <div class="left">
+        <a href="index.html"><h1>MediaTek</h1></a>  
+    </div>
+    <div class="right">
+            <a href="" class="star">
+                <img src="img/star.svg" alt=""><span>10星等</span>
+            </a>
+            <a href="" class="login">
+                <img src="img/login.svg" alt=""><span>學員登入</span>
+            </a>
+            <a class="nav">
+                <span></span>
+                <span></span>
+                <span></span>
+            </a>
+    </div>
+    <div class="menu">
+        <div class="close">＋</div>
+        <img src="img/LogoGreen.svg" alt="">
+        <a href="#innovation"class=" ">學程說明</a>
+        <a href="#future" class=" ">活動報名</a>
+        <a href="#keyword" class=" ">個人專區</a>
+        <a href="#keyword" class=" ">職缺應徵</a>
+    </div>
+  </div>
+  <div class="bg"></div>
+  <script>
+  $(document).ready(function(){
+    let $H=$(window).height();
+    let $W=$(window).width();
+  
+    //resize   
+   $(window).resize(function(){
+        let $H=$(window).height();
+        let $W=$(window).width();
+        $('header .menu').hide();
+        $('header .bg').hide();
+        $('body').css('overflow', 'auto');
+        
+        if(600>$H){
+            $('header .menu a').css({'line-height':'55px'});
+        }
+   });
+  
+    // $(document).scroll(function(){
+    //     if($(this).scrollTop() > 100){
+    //         $('header').addClass('scroll');
+    //     }else{
+    //         $('header').removeClass('scroll');
+    //     }
+    // });
+
+    /*menu*/
+    $('header .nav').click(function () {
+        $('header .menu').show().animate({
+            'marginRight': 320,
+        }, 500);
+        $('header .bg').show();
+        $('body').css('overflow', 'hidden');
+    });
+    
+    $('header .menu .close').click(function () {
+        $('header .menu').animate({
+            'marginRight': 0
+        }, 500);
+        $('header .left').css({'display':'block'});
+        $('header .bg').hide();
+        $('body').css('overflow', 'auto');
+    });
+
+    $('header .menu a').click(function(){
+        $('header .menu').slideUp();
+        $('header .bg').hide();
+        $("body").removeClass('menuOpen');
+        $('header').removeClass('open');
+    });
+  });
+  </script>

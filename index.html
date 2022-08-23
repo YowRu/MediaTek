@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="js/jquery-1.8.3.min.js"></script>
+  <script src="js/loading.js"></script>
+  <script src="js/FlexSlider/jquery.flexslider-min.js"></script>
+  <link rel="stylesheet" href="js/FlexSlider/flexslider.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <title>MediaTek</title>
+</head>
+<body>
+  <header></header>
+  <div id="main">
+    <div class="sliderWP">
+      <div class="text">
+        <p class="big">我的世界 • 我選擇！</p>
+        <p class="small">站在科技的前端不能沒有你</p>
+        <a href="" class="btn">
+          <span>立即加入</span>
+          <img src="img/arrow.svg" alt="">
+        </a>
+      </div>
+      <div class="flexslider">
+        <ul class="slides">
+          <li>
+            <img src="img/banner1.png" />
+          </li>
+          <li>
+            <img src="img/banner1.png" />
+          </li>
+        </ul>
+      </div>
+    </div>
+    <section class="flex">
+      <div class="left">
+        <div class="top">
+          <p>加入半導體發展隊</p>
+          <span>IC DESIGN 修課紀錄維護</span>
+        </div>
+        <div class="down"></div>
+      </div>
+      <div class="right">
+        <div class="item">
+          <p>學程說明</p>
+          <span>學程說明</span>
+        </div>
+        <div class="item">
+          <p>註冊學員</p>
+          <span>學員個人專區專屬</span>
+        </div>
+        <div class="item">
+          <p>活動報名</p>
+          <span>聯發科最新活動報名</span>
+        </div>
+        <div class="item">
+          <p>應徵職缺</p>
+          <span>聯發科技最新活動報名</span>
+        </div>
+      </div>
+    </section>
+    <div class="social">
+      <a href="https://www.facebook.com/MediaTekTaiwan/?brand_redir=1492939347703469"><img src="img/fb.svg" alt=""></a>
+      <a href="https://www.linkedin.com/uas/login?session_redirect=%2Fcompany%2F17763"><img src="img/ig.svg" alt=""></a>
+      <a href="https://twitter.com/MediaTek"><img src="img/twitter.svg" alt=""></a>
+      <a href="https://www.youtube.com/mediatek"><img src="img/yt.svg" alt=""></a>
+    </div>
+  </div>
+  <footer></footer>
+  <script>
+    $(window).load(function() {
+      $('.flexslider').flexslider({
+        animation: "slide"
+      });
+    });
+  </script>
+</body>
+</html>
