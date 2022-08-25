@@ -94,6 +94,7 @@ header .right {
 }
 
 header .menu {
+    overflow-y: scroll;
     width: 320px;
     position: fixed;
     top: 0;
@@ -101,7 +102,7 @@ header .menu {
     z-index: 3;
     padding: 80px 0 0;
     background-color: #fff;
-    height: 100vh;
+    height: 120vh;
 }
 
 header .menu img {
@@ -454,7 +455,7 @@ header .right a span {
     width: 100%;
     height: 216px;
     margin: 120px auto 111px;
-    background: url('../img/description.svg') center no-repeat;
+    background: url('../img/description.png') center no-repeat;
     background-size: contain;
     display: flex;
     justify-content: space-around;
