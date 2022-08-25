@@ -616,6 +616,10 @@ footer p {
         width: 130px;
     }
 
+    header .menu a {
+        line-height: 80px;
+    }
+
     .description {
         background: url('../img/descriptionM.png') center top no-repeat;
         background-size: cover;
