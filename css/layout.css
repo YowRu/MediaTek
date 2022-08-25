@@ -74,7 +74,7 @@ header .left {
 
 header .left a {
     display: block;
-    background: url('../img/logo.svg') no-repeat left center;
+    background: url('../img/logo.png') no-repeat left center;
     background-size: contain;
     height: 57px;
 }
@@ -461,6 +461,10 @@ header .right a span {
     align-items: center;
 }
 
+.description img {
+    width: 190px;
+}
+
 .description ul li {
     color: #fff;
 }
@@ -576,7 +580,7 @@ footer p {
     }
 
     .description img {
-        width: 150px;
+        width: 175px;
     }
 
     .description p {
@@ -608,8 +612,8 @@ footer p {
         font-size: 1.3rem;
     }
 
-    #main .btn {
-        width: 120px;
+    #main .sliderWP .btn {
+        width: 130px;
     }
 
     .description {
