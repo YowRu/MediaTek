@@ -564,7 +564,7 @@ footer p {
         display: block;
     } */
     #main .sliderWP {
-        background: url('../img/bannerM.svg') 10% center no-repeat;
+        background: url('../img/bannerM.png') 10% center no-repeat;
         background-size: cover;
     }
 }
@@ -594,7 +594,7 @@ footer p {
 
 @media(max-width:800px) {
     #main .sliderWP {
-        background: url('../img/bannerM.svg') 30% center no-repeat;
+        background: url('../img/bannerM.png') 30% center no-repeat;
         background-size: cover;
         height: 80vh;
     }
