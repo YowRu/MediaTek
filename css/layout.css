@@ -259,7 +259,7 @@ header .right a span {
 
 #main .sliderWP {
     position: relative;
-    background: url('../img/banner.svg') center no-repeat;
+    background: url('../img/banner.png') center no-repeat;
     background-size: cover;
     height: 90vh;
 }
