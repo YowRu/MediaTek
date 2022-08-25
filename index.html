@@ -23,7 +23,7 @@
           <div class="arrow"></div>
         </a>
       </div>
-      <div class="flexslider">
+      <!-- <div class="flexslider">
         <ul class="slides">
           <li>
             <img src="img/banner.svg" class="pc"/>
@@ -34,16 +34,14 @@
             <img src="img/bannerM.svg" class="mobile"/>
           </li>
         </ul>
-      </div>
+      </div> -->
     </div>
     <section class="flex">
       <a href="" class="left">
-        <img src="img/icon.svg" alt="">
         <div class="top">
           <p>加入半導體發展隊</p>
           <span>IC DESIGN 修課紀錄維護</span>
         </div>
-        <div class="down"></div>
       </a>
       <div class="right">
         <a href="" class="item">
@@ -103,59 +101,50 @@
 
     let W =$(window).width();
     //banner
-    $(window).load(function() {
-      $('.flexslider').flexslider({
-        animation: "slide"
-      });
-    });
+    // $(window).load(function() {
+    //   $('.flexslider').flexslider({
+    //     // animation: "slide"
+    //     autoplay: false,
+    //   });
+    // });
 
-    setTimeout(()=>{
-      let h = $('.flexslider .slides img.pc').height();
-      let mh = $('.flexslider .slides img.mobile').height();
-      if(h>0){
-        if(801>W){
-          $('#main .flexslider').height(mh);
-        }else if(W > 801){
-          $('#main .flexslider').height(h);
-        }
-      }
-    },300);
-
-    //section
-    let h =$('#main section.flex .left').height();
-    if(681 > W ){
-      $('#main section.flex .left>img').css("top",(h-150)/2);
-        $('#main section.flex .left>img').css("left",(W-150)/2);
-      }else if(1201 > W){
-      $('#main section.flex .left>img').css("top",(h-200)/2);
-      $('#main section.flex .left>img').css("left",(W-200)/2);
-    } 
+    // setTimeout(()=>{
+    //   let h = $('.flexslider .slides img.pc').height();
+    //   let mh = $('.flexslider .slides img.mobile').height();
+    //   if(h>0){
+    //     if(801>W){
+    //       $('#main .flexslider').height(mh);
+    //     }else if(W > 801){
+    //       $('#main .flexslider').height(h);
+    //     }
+    //   }
+    // },300);
 
     //resize
-    $(window).resize(function(){
-      let W =$(window).width();
-      let h =$('#main section.flex .left').height();
+    // $(window).resize(function(){
+    //   let W =$(window).width();
+    //   let h =$('#main section.flex .left').height();
 
-      setTimeout(()=>{
-        let h = $('.flexslider .slides img.pc').height();
-        let mh = $('.flexslider .slides img.mobile').height();
-        if(h>0){
-          if(801>W){
-            $('#main .flexslider').height(mh);
-          }else if(W > 801){
-            $('#main .flexslider').height(h);
-          }
-        }
-      },300);
+    //   setTimeout(()=>{
+    //     let h = $('.flexslider .slides img.pc').height();
+    //     let mh = $('.flexslider .slides img.mobile').height();
+    //     if(h>0){
+    //       if(801>W){
+    //         $('#main .flexslider').height(mh);
+    //       }else if(W > 801){
+    //         $('#main .flexslider').height(h);
+    //       }
+    //     }
+    //   },300);
 
-      if(681 > W ){
-        $('#main section.flex .left>img').css("top",(h-150)/2);
-        $('#main section.flex .left>img').css("left",(W-150)/2);
-      }else if(1201 > W){
-        $('#main section.flex .left>img').css("top",(h-200)/2);
-        $('#main section.flex .left>img').css("left",(W-200)/2);
-      } 
-    });
+    //   if(681 > W ){
+    //     $('#main section.flex .left>img').css("top",(h-150)/2);
+    //     $('#main section.flex .left>img').css("left",(W-150)/2);
+    //   }else if(1201 > W){
+    //     $('#main section.flex .left>img').css("top",(h-200)/2);
+    //     $('#main section.flex .left>img').css("left",(W-200)/2);
+    //   } 
+    // });
   </script>
 </body>
 </html>

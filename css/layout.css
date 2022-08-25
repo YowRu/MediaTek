@@ -259,29 +259,23 @@ header .right a span {
 
 #main .sliderWP {
     position: relative;
-}
-
-#main .sliderWP .text {
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 2;
-    width: auto;
-    height: 621px;
+    background: url('../img/banner.svg') center no-repeat;
+    background-size: cover;
+    height: 90vh;
 }
 
 #main .sliderWP .text .big {
     font-size: 3.375rem;
     font-weight: 600;
     color: rgba(53, 64, 250, 1);
-    margin-top: 47px;
-    margin-left: 52px;
+    padding-top: 47px;
+    padding-left: 60px;
 }
 
 #main .sliderWP .text .small {
     font-size: 1.5rem;
-    margin-top: 3px;
-    margin-left: 52px;
+    padding-top: 3px;
+    padding-left: 60px;
 }
 
 #main .btn {
@@ -301,7 +295,7 @@ header .right a span {
 
 #main .sliderWP .text .btn {
     margin-top: 36px;
-    margin-left: 52px;
+    margin-left: 60px;
     transition: all .5s;
 }
 
@@ -350,6 +344,12 @@ header .right a span {
     transition: all .8S;
 }
 
+#main section.flex .left {
+    background: url('../img/section.png') center no-repeat;
+    background-size: cover;
+    height: 680px;
+}
+
 #main section.flex .left:hover::after,
 #main section.flex .right .item:hover::after {
     content: '';
@@ -368,7 +368,6 @@ header .right a span {
 }
 
 #main section.flex .left .top {
-    background-color: rgba(48, 49, 66, 1);
     height: 340px;
 }
 
@@ -557,12 +556,16 @@ footer p {
         box-sizing: border-box;
     }
 
-    .flexslider .slides img.pc {
+    /* .flexslider .slides img.pc {
         display: none;
     }
 
     .flexslider .slides img.mobile {
         display: block;
+    } */
+    #main .sliderWP {
+        background: url('../img/bannerM.svg') 10% center no-repeat;
+        background-size: cover;
     }
 }
 
@@ -590,8 +593,27 @@ footer p {
 }
 
 @media(max-width:800px) {
+    #main .sliderWP {
+        background: url('../img/bannerM.svg') 30% center no-repeat;
+        background-size: cover;
+        height: 80vh;
+    }
+
+    #main .sliderWP .text .big {
+        font-size: 2.5rem;
+        margin-top: 25px;
+    }
+
+    #main .sliderWP .text .small {
+        font-size: 1.3rem;
+    }
+
+    #main .btn {
+        width: 120px;
+    }
+
     .description {
-        background: url('../img/descriptionM.svg') center top no-repeat;
+        background: url('../img/descriptionM.png') center top no-repeat;
         background-size: cover;
         height: 800px;
         margin-top: 0;
@@ -650,6 +672,10 @@ footer p {
 
 
 @media(max-width:680px) {
+    #main section.flex .left {
+        height: 600px;
+    }
+
     header .menu a.btn {
         display: block;
     }
@@ -695,15 +721,21 @@ footer p {
 }
 
 @media(max-width:650px) {
+    #main .sliderWP {
+        height: 71vh;
+    }
+
     #main .sliderWP .text .big {
-        font-size: 3rem;
-        margin-top: 25px;
+        padding-top: 31px;
     }
 
     #main .sliderWP .text .big,
-    #main .sliderWP .text .small,
+    #main .sliderWP .text .small {
+        padding-left: 20px;
+    }
+
     #main .sliderWP .text .btn {
-        margin-left: 22px;
+        margin-left: 20px;
     }
 
     #main .btn span {
@@ -729,8 +761,16 @@ footer p {
 }
 
 @media(max-width:580px) {
+    #main section.flex .left {
+        height: 500px;
+    }
+
     header {
         justify-content: center;
+    }
+
+    #main .sliderWP {
+        height: 61vh;
     }
 
     #main section.flex .left .top, #main section.flex .left .down, #main section.flex .right .item {
@@ -745,23 +785,13 @@ footer p {
         padding-left: 31px;
     }
 
-    #main .sliderWP .text .big {
-        font-size: 2.5rem;
-        margin-top: 25px;
-
-    }
-
-    #main .sliderWP .text .small {
-        font-size: 1.3rem;
-    }
-
-    #main .btn {
-        width: 120px;
-    }
-
 }
 
 @media(max-width:500px) {
+    #main .sliderWP {
+        height: 51vh;
+    }
+
     .description img {
         width: 200px;
     }
@@ -776,6 +806,10 @@ footer p {
 
     #main section.flex span {
         font-size: .875rem;
+    }
+
+    #main .sliderWP .text .big {
+        padding-top: 25px;
     }
 
     #main .sliderWP .text .big {
@@ -833,10 +867,26 @@ footer p {
     .description .text {
         margin-left: 26px;
     }
+
+    #main section.flex .left {
+        height: 400px;
+    }
+
+    #main section.flex .left .top, #main section.flex .left .down, #main section.flex .right .item {
+        height: 200px;
+    }
+
+    #main section.flex .right p {
+        padding-top: 123px;
+    }
 }
 
 
 @media(max-width:414px) {
+    #main .sliderWP {
+        height: 45vh;
+    }
+
     .description {
         height: 600px;
     }
