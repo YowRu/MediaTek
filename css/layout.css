@@ -533,6 +533,7 @@ footer p {
 }
 
 footer .white {
+    display: none;
     color: #fff;
 }
 
