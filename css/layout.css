@@ -532,6 +532,10 @@ footer p {
     margin: 0 10px;
 }
 
+footer .white {
+    color: #fff;
+}
+
 @media(max-width:1400px) {
     #main .social {
         width: 90%;
